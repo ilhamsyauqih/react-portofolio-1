@@ -1,9 +1,24 @@
+import DataImage from './data'
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quam iure asperiores illum culpa iste ratione maiores reiciendis maxime error magnam blanditiis ipsam mollitia accusantium, dolore, beatae itaque vel illo aliquid libero odio numquam laudantium quibusdam? Ea ipsa iure maiores quod voluptatem sint dolorum quo. Pariatur perspiciatis eos exercitationem quas earum fugit amet, adipisci similique provident vel! Aperiam quibusdam quaerat a consequatur at et, nesciunt, sed tempore hic maxime cumque? Non nulla aspernatur ut laudantium eveniet. Dolore repellendus ullam repudiandae enim accusamus, doloribus praesentium nesciunt qui ipsum quo. Et porro asperiores voluptatibus veniam architecto unde nobis quibusdam magnam dignissimos nostrum recusandae ab nihil, laboriosam aliquid, fuga explicabo. Amet reiciendis nam cupiditate aut quo odit dignissimos dolorum animi commodi. Harum eos soluta suscipit doloremque eaque maiores dolor ex iste architecto labore hic sunt, reiciendis perspiciatis quis? Dolorem maiores quisquam voluptas nisi enim nulla ipsum quas natus ratione incidunt impedit excepturi cupiditate itaque voluptatibus tenetur eius reprehenderit, expedita facere saepe repudiandae soluta recusandae quidem blanditiis unde? Repellat assumenda, maiores amet soluta officia explicabo dolorem. At quam, molestiae voluptas laborum voluptatem quod dicta non tempore odio iusto, autem tempora in nobis placeat asperiores saepe commodi qui doloribus assumenda labore nisi sit. Numquam, a?
-      </h1>
+      <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
+        <div>
+          <div className='flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl'>
+            <img src={DataImage.HeroImage} alt="Hero Image" className='w-10 rounded-md' />
+            <q>Kode yang indah, lahir dari ketekunan.😁</q>
+          </div>
+          <h1 className='text-5xl/tight font-bold mb-6'>Hi, Saya Ilham Syauqi Hizbullah</h1>
+          <p className='text-base/loose mb-6 opacity-50 text-justify'>Saya mempunyai ketertarikan dalam bidang Programming dan Designer, terutama pada pembuatan Website dan Desain seperti Poster, Pamflet serta Banner, ketertarikan pada bidang ini sudah berlangsung lebih dari 4 Tahun untuk semua Bidang.
+          </p>  
+          <div className='flex items-center sm:gap-4 gap-2'>
+            <a href="#" className='bg-violet-700 p-4 rounded-2xl hover:bg-violet-600'>Download CV <i className="ri-download-line ri-lg"></i></a>
+            <a href="#" className='bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600'>Lihat Proyek <i className="ri-arrow-down-line ri-lg"></i></a>
+          </div>
+        </div>
+        <img src={DataImage.HeroImage} alt="Hero Image" className='w-[500px] md:ml-auto' />
+      </div>
     </>
   )
 }
