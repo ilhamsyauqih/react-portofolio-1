@@ -86,6 +86,31 @@ function App() {
         </div>
       </div>
       {/* Proyek Section End */}
+      {/* Kontak Section Start */}
+      <div className="kontak mt-32 p-10">
+            <h1 className='text-4xl mb-2 font-bold text-center'>Kontak</h1>
+            <p className='text-base/loose text-center mb-10'>Mari terhubung dengan saya</p>
+            <form action="" className='bg-zinc-800 p-10 w-fit mx-auto rounded-md' autoComplete='off'>
+              <div className='flex flex-col gap-6'>
+                <div className='flex flex-col gap-2'>
+                  <label className='font-semibold'>Nama Lengkap</label>
+                  <input type="text" name='nama' placeholder='Masukkan Nama...' required/>
+                </div>
+                <div className='flex flex-col gap-2'>
+                  <label className='font-semibold'>Email</label>
+                  <input type="email" name='email' placeholder='Masukkan Email...' required/>
+                </div>
+                <div className='flex flex-col gap-2'>
+                  <label htmlFor='pesan'className='font-semibold'>Pesan</label>
+                  <textarea name="pesan" id="pesan" cols="30" rows="10" placeholder='Pesan...'></textarea>
+                </div>
+                <div>
+                  <button type="submit">Kirim Pesan</button>
+                </div>
+              </div>
+            </form>
+      </div>
+      {/* Kontak Section End */}
     </>
   )
 }
