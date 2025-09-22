@@ -94,18 +94,18 @@ function App() {
               <div className='flex flex-col gap-6'>
                 <div className='flex flex-col gap-2'>
                   <label className='font-semibold'>Nama Lengkap</label>
-                  <input type="text" name='nama' placeholder='Masukkan Nama...' required/>
+                  <input type="text" className='border border-zinc-500 p-2 rounded-md' name='nama' placeholder='Masukkan Nama...' required/>
                 </div>
                 <div className='flex flex-col gap-2'>
                   <label className='font-semibold'>Email</label>
-                  <input type="email" name='email' placeholder='Masukkan Email...' required/>
+                  <input type="email" className='border border-zinc-500 p-2 rounded-md' name='email' placeholder='Masukkan Email...' required/>
                 </div>
                 <div className='flex flex-col gap-2'>
                   <label htmlFor='pesan'className='font-semibold'>Pesan</label>
-                  <textarea name="pesan" id="pesan" cols="30" rows="10" placeholder='Pesan...'></textarea>
+                  <textarea name="pesan" className='border border-zinc-500 p-2 rounded-md'  id="pesan" cols="45" rows="7" placeholder='Pesan...' required></textarea>
                 </div>
-                <div>
-                  <button type="submit">Kirim Pesan</button>
+                <div className='text-center'>
+                  <button type="submit" className='bg-violet-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-violet-600'>Kirim Pesan</button>
                 </div>
               </div>
             </form>
